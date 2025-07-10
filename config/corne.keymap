@@ -43,7 +43,7 @@
         gbp: gbp {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(LC(U)) &kp NUMBER_0 &kp NUMBER_0 &kp A &kp NUMBER_3>;
+            bindings = <&kp LS(LC(U)) &kp NUMBER_0 &kp NUMBER_0 &kp A &kp NUMBER_3 &kp SPACE>;
             label = "GBP";
         };
     };
