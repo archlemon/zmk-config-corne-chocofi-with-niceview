@@ -48,6 +48,8 @@
         };
 
         unicode_pound: unicode_pound {
+            compatible = "zmk,behavior-unicode";
+            label = "Unicode £";
             unicode = <0x00A3>;
         };
     };
