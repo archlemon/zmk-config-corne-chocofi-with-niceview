@@ -42,6 +42,7 @@
             compatible = "zmk,behavior-unicode";
             label = "Unicode £";
             unicode = <0x00A3>;
+            #binding-cells = <0>;
         };
     };
 
