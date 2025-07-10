@@ -37,13 +37,6 @@
             require-prior-idle-ms = <150>;
             hold-trigger-key-positions = <1 2 3 4 5 13 14 15 16 17 25 26 27 28 29 0 12 24>;
         };
-
-        unicode_pound: unicode_pound {
-            compatible = "zmk,behavior-unicode";
-            label = "Unicode £";
-            unicode = <0x00A3>;
-            #binding-cells = <0>;
-        };
     };
 
     macros {
@@ -105,10 +98,10 @@
 
         special {
             bindings = <
-&bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &none    &none       &kp C_PLAY_PAUSE  &none         &none       &none  &bt BT_CLR
-&bt BT_CLR    &none           &none         &none         &none         &none    &kp C_PREV  &kp C_VOL_DN      &kp C_VOL_UP  &kp C_NEXT  &none  &none
-&none         &unicode_pound  &none         &none         &none         &none    &none       &none             &none         &none       &none  &studio_unlock
-                                            &none         &none         &none    &none       &none             &none
+&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &none    &none       &kp C_PLAY_PAUSE  &none         &none       &none  &bt BT_CLR
+&bt BT_CLR    &none         &none         &none         &none         &none    &kp C_PREV  &kp C_VOL_DN      &kp C_VOL_UP  &kp C_NEXT  &none  &none
+&none         &gbp          &none         &none         &none         &none    &none       &none             &none         &none       &none  &studio_unlock
+                                          &none         &none         &none    &none       &none             &none
             >;
         };
 
