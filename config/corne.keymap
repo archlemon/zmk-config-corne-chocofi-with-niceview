@@ -37,6 +37,12 @@
             require-prior-idle-ms = <150>;
             hold-trigger-key-positions = <1 2 3 4 5 13 14 15 16 17 25 26 27 28 29 0 12 24>;
         };
+
+        unicode_pound: unicode_pound {
+            compatible = "zmk,behavior-unicode";
+            label = "Unicode £";
+            unicode = <0x00A3>;
+        };
     };
 
     macros {
@@ -45,12 +51,6 @@
             #binding-cells = <0>;
             bindings = <&kp LS(LC(U)) &kp NUMBER_0 &kp NUMBER_0 &kp A &kp NUMBER_3 &kp SPACE>;
             label = "GBP";
-        };
-
-        unicode_pound: unicode_pound {
-            compatible = "zmk,behavior-unicode";
-            label = "Unicode £";
-            unicode = <0x00A3>;
         };
     };
 
